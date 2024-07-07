@@ -21,9 +21,13 @@ flatpickr(datetimePicker, {
     onClose(selectedDates) {
         if (selectedDates[0] <= new Date()) {
             iziToast.error({
-                title: 'Error',
+                title: '',
+                icon: '',
                 message: 'Please choose a date in the future',
                 position: 'topCenter',
+                backgroundColor: "#ef4040",
+                titleColor: "#fff",
+                messageColor: "#fff"
             });
             startButton.disabled = true;
         } else {
