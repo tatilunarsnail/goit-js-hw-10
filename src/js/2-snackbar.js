@@ -1,7 +1,7 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-document.querySelector('.form').addEventListener('submit', function(event) {
+document.querySelector('.form').addEventListener('submit', event => {
     event.preventDefault();
 
     const delay = event.target.delay.value;
