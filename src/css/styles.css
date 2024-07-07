@@ -75,7 +75,11 @@ h1 {
   border: 1px solid #4E75FF;
   outline: none;
 }
-button {
+#datetime-picker:hover:disabled {
+  border: 1px solid #808080;
+  outline: none;
+}
+[data-start] {
   border-radius: 8px;
   padding: 8px 16px;
   width: 75px;
@@ -90,7 +94,7 @@ button {
   background: #4e75ff;
   color: #fff;
 }
-button:disabled {
+[data-start]:disabled {
   border-radius: 8px;
   padding: 8px 16px;
   width: 75px;
@@ -102,9 +106,10 @@ button:disabled {
   line-height: 24px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  background: #cfcfcf;
   color: #989898;
 }
-button:hover {
+[data-start]:hover {
   border-radius: 8px;
   padding: 8px 16px;
   width: 75px;
@@ -118,4 +123,19 @@ button:hover {
   letter-spacing: 0.04em;
   background: #6c8cff;
   color: #fff;
+}
+[data-start]:disabled:hover {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: #cfcfcf;
+  color: #989898;
 }
